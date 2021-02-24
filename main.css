@@ -1,0 +1,29 @@
+h1, h2{
+    text-align: center;
+}
+
+.aCenterContainer{
+    display:flex;
+    justify-content: center;
+}
+
+.imageContainerLeft{
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+}
+
+.imageContainer{
+    display:flex;
+    width:100%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.imageContainer p{
+    margin-left:10px;
+}
+.imageContainerLeft p{
+    margin-right:10px;
+    text-align: right;
+}
