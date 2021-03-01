@@ -2,9 +2,29 @@ h1, h2{
     text-align: center;
 }
 
-.aCenterContainer{
+td, th{
+    text-align: center;
+    width: 33vw;
+}
+
+.emailForm{
+    background-color: lightgray;
+    padding:20px;
+}
+
+.centerContainer{
     display:flex;
     justify-content: center;
+}
+
+.doubleButtonContainer{
+    display:flex;
+    justify-content: center;
+}
+
+.doubleButtonContainer input, a{
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .imageContainerLeft{
@@ -26,4 +46,8 @@ h1, h2{
 .imageContainerLeft p{
     margin-right:10px;
     text-align: right;
+}
+.latestvideo{
+    width: min(75vw, 1000px); 
+    height: min(calc(75vw * 3 / 4), 750px);
 }

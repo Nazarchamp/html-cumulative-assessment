@@ -8,10 +8,41 @@
     </head>
     <body>
         <h1>Sign Up To Get Emails About New Videos</h1>
-        <div class="aCenterContainer">
-            <a href="index.html">
-                <button>Return Back To Home</button>
-            </a>
+        <div class="centerContainer">
+            <div class="doubleButtonContainer">
+                <a href="index.html">
+                    <button>Return Back To Home</button>
+                </a>
+                <a href="video_list.html">
+                    <button>View Our Videos!</button>
+                </a>
+            </div>
+        </div>
+        <br>
+        <div class="centerContainer">
+            <!--Form to sign up to email list-->
+            <form method="GET" class="emailForm">
+                <!--Text input for email(With Criteria of a default size of 64, but maxlength of 320, this 320 comes from 64 char username, an @ symbol, and 255 char domain)-->
+                <label for="email"><b><i>Email:</i></b></label>
+                <input id="email" placeholder="abc@def.com" name="email" size='32' maxlength="320" pattern="[a-z]{1,64}@[a-z.]{1,255}">  
+
+                <br><br>
+
+                <!--Check boxes for whether or not they want recipes, and updates about the website-->
+                <label><input type="checkbox" name="recipeUpdates" checked="True"><b><i>Send Me New Recipes</i></b></label>
+                <br><br>
+                <label><input type="checkbox" name="websiteUpdates" checked="True"><b><i>Send Me Updates About The Website</i></b></label>
+
+                <br><br>
+
+                <div class="doubleButtonContainer">
+                    <!--Button to reset the form to it's base state-->
+                    <input type="reset">
+
+                    <!--Button to submit the form-->
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
         </div>
     </body>
 </html>
