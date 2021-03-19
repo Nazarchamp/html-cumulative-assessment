@@ -24,7 +24,7 @@
             <form method="GET" class="emailForm">
                 <!--Text input for email(With Criteria of a default size of 64, but maxlength of 320, this 320 comes from 64 char username, an @ symbol, and 255 char domain)-->
                 <label for="email"><b><i>Email:</i></b></label>
-                <input id="email" placeholder="abc@def.com" name="email" size='32' maxlength="320" pattern="[a-z]{1,64}@[a-z.]{1,255}">  
+                <input id="email" placeholder="abc@def.com" name="email" size='32' maxlength="320" pattern="[a-z0-9]{1,64}@[a-z.]{1,255}">  
 
                 <br><br>
 
